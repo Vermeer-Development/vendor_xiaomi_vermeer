@@ -1,0 +1,3 @@
+# Ignore device blobs if they are to big and have to be split during extraction
+proprietary/odm/etc/camera/aivsModel_6C06C006
+proprietary/odm/lib64/libmialgo_aisn.so
