@@ -635,6 +635,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sns_tilt_to_wake.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/sensors/config/sx937x_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sx937x_0.json \
     vendor/xiaomi/vermeer/proprietary/odm/etc/sensors/config/sx937x_reg_0.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/config/sx937x_reg_0.json \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/setting.xml:$(TARGET_COPY_OUT_ODM)/etc/setting.xml \
     vendor/xiaomi/vermeer/proprietary/odm/etc/thermal-4k.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-4k.conf \
     vendor/xiaomi/vermeer/proprietary/odm/etc/thermal-arvr.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-arvr.conf \
     vendor/xiaomi/vermeer/proprietary/odm/etc/thermal-camera.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-camera.conf \
@@ -642,6 +643,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/vermeer/proprietary/odm/etc/thermal-cgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-cgame.conf \
     vendor/xiaomi/vermeer/proprietary/odm/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-chg-only.conf \
     vendor/xiaomi/vermeer/proprietary/odm/etc/thermal-class0.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-class0.conf \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/thermal-hp-mgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-hp-mgame.conf \
+    vendor/xiaomi/vermeer/proprietary/odm/etc/thermal-hp-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-hp-normal.conf \
     vendor/xiaomi/vermeer/proprietary/odm/etc/thermal-huanji.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-huanji.conf \
     vendor/xiaomi/vermeer/proprietary/odm/etc/thermal-mgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-mgame.conf \
     vendor/xiaomi/vermeer/proprietary/odm/etc/thermal-navigation.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-navigation.conf \
