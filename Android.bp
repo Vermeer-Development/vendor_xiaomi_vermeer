@@ -21035,10 +21035,50 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
+	name: "init.class_main",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.class_main.sh",
+	filename: "init.class_main.sh",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "init.kernel.post_boot-kalama",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.kernel.post_boot-kalama.sh",
+	filename: "init.kernel.post_boot-kalama.sh",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "init.kernel.post_boot",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.kernel.post_boot.sh",
+	filename: "init.kernel.post_boot.sh",
+	soc_specific: true,
+}
+
+sh_binary {
 	name: "init.qcom.class_core",
 	owner: "xiaomi",
 	src: "proprietary/vendor/bin/init.qcom.class_core.sh",
 	filename: "init.qcom.class_core.sh",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "init.qcom.early_boot",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.qcom.early_boot.sh",
+	filename: "init.qcom.early_boot.sh",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "init.qcom.post_boot",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.qcom.post_boot.sh",
+	filename: "init.qcom.post_boot.sh",
 	soc_specific: true,
 }
 
@@ -21051,10 +21091,26 @@ sh_binary {
 }
 
 sh_binary {
+	name: "init.qcom",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.qcom.sh",
+	filename: "init.qcom.sh",
+	soc_specific: true,
+}
+
+sh_binary {
 	name: "init.qti.kernel",
 	owner: "xiaomi",
 	src: "proprietary/vendor/bin/init.qti.kernel.sh",
 	filename: "init.qti.kernel.sh",
+	soc_specific: true,
+}
+
+sh_binary {
+	name: "init.qti.media",
+	owner: "xiaomi",
+	src: "proprietary/vendor/bin/init.qti.media.sh",
+	filename: "init.qti.media.sh",
 	soc_specific: true,
 }
 
@@ -22163,5 +22219,26 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	device_specific: true,
+}
+
+install_symlink {
+	name: "libEGL_adreno_libEGL_adreno_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libEGL_adreno.so",
+	symlink_target: "/vendor/lib64/egl/libEGL_adreno.so",
+}
+
+install_symlink {
+	name: "libGLESv2_adreno_libGLESv2_adreno_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libGLESv2_adreno.so",
+	symlink_target: "/vendor/lib64/egl/libGLESv2_adreno.so",
+}
+
+install_symlink {
+	name: "libq3dtools_adreno_libq3dtools_adreno_symlink64",
+	soc_specific: true,
+	installed_location: "lib64/libq3dtools_adreno.so",
+	symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
 
